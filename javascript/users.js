@@ -7,6 +7,29 @@ searchBtn.onclick = () => {
     searchBar.classList.toggle("active");
     searchBar.focus();
     searchBtn.classList.toggle("active");
+    searchBar.value = "";
+}
+
+searchBar.onkeyup = () => {
+    let searchTerm = searchBar.value;
+    if (searchTerm != "") {
+        searchBar.classList.add("active");
+    } else {
+        searchBar.classList.remove("active");
+    }
+    // Let's start Ajax
+    let xhr = new XMLHttpRequest(); /* Creating XML object */
+    xhr.open("POST", "php/search.php", true);
+    xhr.onload = () => {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                let data = xhr.response;
+                usersList.innerHTML = data;
+            }
+        }
+    }
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send("searchTerm=" + searchTerm);
 }
 
 setInterval(() => {
@@ -17,7 +40,9 @@ setInterval(() => {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 let data = xhr.response;
-                usersList.innerHTML = data;
+                if (!searchBar.classList.contains("active")) { /* If active active not contains in search bar then add this data */
+                    usersList.innerHTML = data;
+                }
             }
         }
     }
