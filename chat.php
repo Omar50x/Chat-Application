@@ -27,50 +27,7 @@
                 </div>
             </header>
             <div class="chat-box">
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="imgs/62f0f34241b88.png" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="imgs/62f0f34241b88.png" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="imgs/62f0f34241b88.png" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="imgs/62f0f34241b88.png" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ea!</p>
-                    </div>
-                </div>
+                
             </div>
             <form action="#" id="formId" class="typing-area" autocomplete="off">
                 <input type="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id']; ?>" hidden>

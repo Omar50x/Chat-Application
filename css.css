@@ -274,6 +274,7 @@ form .name-details .field:last-child{
     background: #333;
     color: #fff;
     border-radius: 18px 18px 0 18px;
+    margin: 8px 0 8px 0;
 }
 .chat-box .incoming{
     display: flex;
